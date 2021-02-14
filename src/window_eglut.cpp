@@ -250,7 +250,7 @@ void EGLUTWindow::_eglutKeyboardSpecialFunc(int key, int action) {
     if (mKey != KeyCode::UNKNOWN) {
         currentWindow->onKeyboard(mKey, enumAction);
     } else if (enumAction == KeyAction::PRESS){
-        GameWindowManager::getManager()->getErrorHandler()->onError("EGLUT Unknown Key", "Please check your Keyboard Layout. No Fallback Implemented");
+        //GameWindowManager::getManager()->getErrorHandler()->onError("EGLUT Unknown Key", "Please check your Keyboard Layout. No Fallback Implemented");
     }
 }
 
